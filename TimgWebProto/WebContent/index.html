@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Timage</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+</head>
+<body>
+	<div id="wrapper">
+	<h1>Image Processor</h1>
+	<div id="mainDiv">
+		<h4>Enter URL of photo you want to process:</h4>
+		<div id="urlDiv">
+			<input id="URLInput" type="text" value="http://www.petyourdog.com/uploads/articles/17-6.jpg" size="75"/>
+			<input id="submit" type="submit" value="Search">
+		</div>
+	</div> 
+	<div>
+		<p id="loading">Loading.</p>
+		<img id="image" alt="queriedImage" src=" http://www.petyourdog.com/uploads/articles/17-6.jpg" height="200" width="200">
+	</div>
+	<div id=divTag>
+		<ol id="tags">
+		</ol>
+	</div>
+	</div>
+</body>
+</html>
