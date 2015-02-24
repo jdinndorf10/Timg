@@ -1,7 +1,7 @@
 /**
  * First gets inputted URL
  * Then querys servlet with it, gets json response
- * Displays tags & confidence level on screen
+ * Displays tags & confidence level on screen.
  */
 $(document).ready(function() {
 	$("#submit").click(function() {
@@ -31,7 +31,7 @@ $(document).ready(function() {
 		//ajax request
 		
 		interval = setInterval(function () {displayLoading()}, 500);
-		var debug = $.post("http://localhost:8080/ImaggaWebProto/Servlet", getURL(), function(data) {
+		var debug = $.post("http://localhost:8080/TimgWebProto/Servlet", getURL(), function(data) {
 			displayResults(data);
 		});
 		
